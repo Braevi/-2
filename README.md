@@ -7,11 +7,11 @@
 
 ##### 加密:
 
-![S-AES/images/1_1.png at main · DeusExMachina2/S-AES (github.com)]([-2/1_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/1_1.png))
+![]([-2/1_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/1_1.png))
 
 ##### 解密:
 
-![S-AES/images/1_2.png at main · DeusExMachina2/S-AES (github.com)]([-2/1_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/1_2.png))
+![]([-2/1_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/1_2.png))
 
 ### 第二关: 交叉测试
 
@@ -21,11 +21,11 @@
 
 ##### 我们的测试结果:
 
-![S-AES/images/2_1.png at main · DeusExMachina2/S-AES (github.com)]([-2/2_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/2_1.png))
+![]([-2/2_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/2_1.png))
 
 ##### 他们的测试结果:
 
-![S-AES/images/2_2.png at main · DeusExMachina2/S-AES (github.com)]([-2/2_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/2_2.png))
+![]([-2/2_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/2_2.png))
 
 （十进制密文12420转换成二进制为0011000010000100与我们的结果一样）
 
@@ -35,7 +35,7 @@
 
  考虑到向实用性扩展，加密算法的数据输入可以是ASCII编码字符串(分组为2 Bytes)，对应地输出也可以是ASCII字符串(很可能是乱码)。对于奇数长度的字符串，我们采取才字符串末尾加上一个空格来保障加解密的正常进行。程序设计了使用字符串的形式进行输入和输出的模式，只需要切换到String模式即可将字符串加密或将密文（字符串形式）解密为明文字符串：
 
-![S-AES/images/3_1.png at main · DeusExMachina2/S-AES (github.com)]([-2/3_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/3_1.png))
+![]([-2/3_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/3_1.png))
 
 ### 第四关: 多重加密
 
@@ -43,23 +43,23 @@
 
  将S-AES算法通过双重加密进行扩展，分组长度仍然是16 bits，但使用两个16bits的密钥。
 
-![S-AES/images/4_1.png at main · DeusExMachina2/S-AES (github.com)]([-2/4_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_1.png))
+![]([-2/4_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_1.png))
 
-![S-AES/images/4_2.png at main · DeusExMachina2/S-AES (github.com)]([-2/4_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_2.png))
+![]([-2/4_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_2.png))
 
 *中间相遇攻击*：
 
 假设找到了使用相同密钥的明、密文对(一个或多个)，请尝试使用中间相遇攻击的方法找到正确的密钥Key(K1+K2)。
 
-![S-AES/images/4_3.png at main · DeusExMachina2/S-AES (github.com)]([-2/4_3.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_3.png))
+![]([-2/4_3.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_3.png))
 
 *多重加密*：
 
 将S-AES算法通过三重加密进行扩展，使用一组三个16bits的密钥(K1+K2+K3)的模式进行三重加解密。
 
-![S-AES/images/4_4.png at main · DeusExMachina2/S-AES (github.com)]([-2/4_4.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_4.png))
+![]([-2/4_4.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_4.png))
 
-![S-AES/images/4_5.png at main · DeusExMachina2/S-AES (github.com)]([-2/4_5.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_5.png))
+![]([-2/4_5.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/4_5.png))
 
 ### 第五关: 工作模式
 
@@ -69,8 +69,8 @@
 
 *CBC模式加解密*：
 
-![S-AES/images/5_1.png at main · DeusExMachina2/S-AES (github.com)]([-2/5_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/5_1.png))
+![]([-2/5_1.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/5_1.png))
 
 *CBC模式混淆*：
 
-![S-AES/images/5_2.png at main · DeusExMachina2/S-AES (github.com)]([-2/5_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/5_2.png))
+![]([-2/5_2.png at main · Braevi/-2](https://github.com/Braevi/-2/blob/main/5_2.png))
